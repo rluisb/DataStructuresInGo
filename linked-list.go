@@ -1,14 +1,4 @@
-// package main
-
-// import (
-// 	"fmt"
-// )
-
-// func main() {
-//   fmt.Println("Hello Wolrd")
-// }
-
-package main
+package simpleLinkedList
 
 import (
 	"fmt"

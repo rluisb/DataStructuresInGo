@@ -10,12 +10,16 @@ type Node struct {
   next *Node
 }
 
-type DoubleLinkedList struct {
-  nodes []Node
+type DoublyLinkedList struct {
+  head *Node
+  length int
 }
 
-func (d *DoubleLinkedList) AddNode(node Node)  {
-    d.nodes = append(d.nodes, node)
+func (d *DoublyLinkedList) prepend(node *Node)  {
+    existingNode := d.head
+    d.head = node
+    d.head.next = existingNode
+    d.length++
 }
 
 func main() {
