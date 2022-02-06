@@ -32,12 +32,12 @@ func main() {
   thirdNode = Node{previous: &secondNode, content: 22}
   
 
-	doubleLinkedList := DoubleLinkedList{}
-  doubleLinkedList.AddNode(firstNode)
-  doubleLinkedList.AddNode(secondNode)
-  doubleLinkedList.AddNode(thirdNode)
-  for i := 0; i < len(doubleLinkedList.nodes); i++ {
-    fmt.Print(doubleLinkedList.nodes[i].content, " <-> ")
+	doublyLinkedList := DoublyLinkedList{}
+  doublyLinkedList.AddNode(firstNode)
+  doublyLinkedList.AddNode(secondNode)
+  doublyLinkedList.AddNode(thirdNode)
+  for i := 0; i < len(doublyLinkedList.nodes); i++ {
+    fmt.Print(doublyLinkedList.nodes[i].content, " <-> ")
   }
 }
 
